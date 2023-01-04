@@ -14,3 +14,7 @@ made it public and available for everyone using Hugging face hub.
 
 
 ![diab_det](https://user-images.githubusercontent.com/106756989/210245467-bb448bed-ffc4-45c0-976f-40889b5b465c.png)
+
+# public link
+
+https://huggingface.co/spaces/Vivekan/v_diabetes_detection
