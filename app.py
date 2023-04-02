@@ -1,7 +1,7 @@
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import BaggingClassifier
 import pickle
 
-model = pickle.load(open('model.pkl','rb'))
+model = pickle.load(open('model_diabetes.pkl','rb'))
 
 def classify(num):
     if num<1:
@@ -30,5 +30,3 @@ age = gr.inputs.Slider(minimum=20, maximum=100, default=2, label="age")
 
 op=gr.outputs.HighlightedText(color_map={ "negative": "green",
         "positive": "red",})
-
-gr.Interface(predict_diabetes, inputs=[preg,glu,bp,st,ins,bmi,dpf,age], outputs=op,live=True).launch()
